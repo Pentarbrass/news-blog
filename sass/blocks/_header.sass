@@ -1,0 +1,64 @@
+.header
+    background: url(../img/main-bg.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    height: 742px
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 26px 0 26px 0
+    &__form
+        &-button
+            padding: 13px 24px
+            color: $light
+            border: 2px solid $light
+            border-radius: 8px
+            background-color: transparent
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+    .navbar
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $light
+        &__wrapper
+            display: flex
+            justify-content: space-between
+        &__menu
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0
+            margin: 0 69px 0 0
+        &__link
+            text-decoration: none
+            padding: 13px 18px 13px 0
+            color: $light
+        &-dropdown
+            display: none
+            position: absolute
+            padding: 0
+            &__item
+                z-index: 1
+                padding: 7px 0 7px 0
+                margin: 0
+                text-align: left
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+            &__link
+                font-weight: 600
+                font-size: 16px
+                line-height: 22px
+                color: $light
+                text-decoration: none
+.dropdown-link
+    background: url(../img/drop-down.svg)
+    background-repeat: no-repeat
+    background-position: right 8% bottom 47%
+    margin-right: 13px
+.dropdown
+    &-item
+        &:hover .navbar-dropdown
+            display: block
