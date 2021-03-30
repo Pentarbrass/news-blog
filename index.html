@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Отдел новостей</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <img src="img/Logo.svg" alt="Logo: Ehya" class="logo">
+                <div class="navbar__wrapper">
+                    <ul class="navbar__menu">
+                        <li class="navbar__item"><a href="#" class="navbar__link">Домой</a></li>
+                        <li class="navbar__item dropdown-item"><a href="#" class="navbar__link dropdown-link">Лендинги</a>
+                            <ul class="navbar-dropdown">
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг №1</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг №2</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг №3</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг №4</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item dropdown-item"><a href="#" class="navbar__link dropdown-link">Страницы</a>
+                            <ul class="navbar-dropdown">
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница №1</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница №2</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница №3</a></li>
+                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница №4</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Помощь</a></li>
+                    </ul>
+                    <button class="button navbar__form-button">Получить</button>
+                </div>
+            </div>
+            <div class="main-screen">
+                <h1 class="main-title">Отдел новостей</h1>
+                <div class="search-wrapper">
+                    <form action="#" class="search">
+                        <input type="text" class="search__input" placeholder="Поиск постов">
+                        <button type="submit" class="button search__button">
+                            Поиск
+                        </button>
+                    </form>
+                    <div class="tags">
+                        <span class="tags__title">Популярные Тэги :</span>
+                        <button class="tags__button">Design</button>
+                        <button class="tags__button">User Experience</button>
+                        <button class="tags__button">User Interfaces</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    
+    <section class="popular">
+        <div class="container">
+            <div class="feature-card popular__card">
+                <div class="feature-card__img">
+                    <img src="img/feature-img.jpg" alt="Image: Cheep aviatickets" class="feature-card__foto">
+                </div>
+                <!-- /.advert-card__img -->
+                <div class="feature-card__info">
+                    <a href="#" class="offers"><span class="offers__text">Предложения</span></a>
+                    <h3 class="feature-card__title">Дешевые Авиабилеты - Отличный Способ Сэкономить</h3>
+                    <p class="feature-card__subtitle">В этом цифровом поколении, где информацию<br> можно легко получить за секунды, визитки ...</p>
+                    <div class="post-info">
+                        <div class="user-info">
+                            <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
+                            <div class="user-info__wrapper">
+                                <span class="user-name">Viola Manisa</span>
+                                <div class="verification">
+                                    <img src="img/verified-icon.svg" alt="Icon: Verified" class="verification__icon">
+                                    <span class="verification__info">Verified writer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.user-info -->
+                        <span class="post-date">02 May</span>
+                    </div>
+                    <!-- /.post-info -->
+                </div>
+                <!-- /.advert-card__info -->
+            </div>
+            <!-- /.feature-card -->
+            <div class="section-header">
+                <h2 class="section-header__title">Популярные Статьи</h2>
+                <div class="section-header__description">
+                    <span class="section-header__subtitle">Мы делимся общими тенденциями, стратегическими идеями, мнениями, короткими и длинными историями команды, стоящей за
+                    компанией.</span>
+                    <button class="button section-header__button"><span class="button__text">Смотреть все</span><img src="img/button-arrow.svg" alt="Icon: Arrow"> </button>
+                </div>
+            </div>
+            <!-- /.section-title -->
+            <div class="popular-wrapper">
+                <div class="offer-card">
+                    <img src="img/offer-img-1.png" alt="Image: Offer image" class="offer-card__img">
+                    <a href="#" class="offer-card__button"><span class="offer-card__text">Предложения</span></a>
+                    <div class="offer-card__wrapper">
+                        <h3 class="offer-card__title offer-card__title--mt">Как защитить свою<br> семью от угарного газа</h3>
+                        <div class="post-info">
+                            <div class="user-info">
+                                <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
+                                <div class="user-info__wrapper">
+                                    <span class="user-name offer-card__user">Viola Manisa</span>
+                                    <div class="verification">
+                                        <img src="img/verified-icon.svg" alt="Icon: Verified" class="verification__icon">
+                                        <span class="verification__info">Verified writer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.user-info -->
+                            <span class="post-date offer-card__date">02 May</span>
+                        </div>
+                        <!-- /.post-info -->
+                    </div>
+                </div>
+                <!-- /.offer-card -->
+                <div class="offer-card">
+                    <img src="img/offer-img-2.png" alt="Image: Offer image" class="offer-card__img">
+                    <a href="#" class="offer-card__button"><span class="offer-card__text">Предложения</span></a>
+                    <div class="offer-card__wrapper">
+                        <h3 class="offer-card__title">Материнство - самая трудная и лучшая работа на свете</h3>
+                        <div class="post-info">
+                            <div class="user-info">
+                                <img src="img/avatar-2.png" alt="Icon: Avatar" class="avatar">
+                                <div class="user-info__wrapper">
+                                    <span class="user-name offer-card__user">Joshua William</span>
+                                    <div class="verification">
+                                        <img src="img/verified-icon.svg" alt="Icon: Verified" class="verification__icon">
+                                        <span class="verification__info">Verified writer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.user-info -->
+                            <span class="post-date offer-card__date">02 May</span>
+                        </div>
+                        <!-- /.post-info -->
+                    </div>
+                </div>
+                <!-- /.offer-card -->
+            </div>
+            <!-- /.popular-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.popular -->
+
+</body>
+</html>
