@@ -1,0 +1,40 @@
+.examples
+    padding: 10px 0 46px 0
+    &-header
+        padding-top: 70px
+        padding-bottom: 47px
+        &__title
+            margin-bottom: 0
+        &__description
+            align-items: flex-end
+    &__offers
+        padding: 5px 13px
+    &__text
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $blue
+    &__wrapper
+        position: relative
+.slider
+    &-button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 99
+        width: 54px
+        height: 56px
+        background-color: $blue
+        border-radius: 50%
+        border: none
+        outline: none
+        cursor: pointer
+        &--next
+            right: -25px
+            background-image: url(../img/arrow-next.svg)
+        &--prev
+            left: -25px
+            background-image: url(../img/arrow-prev.svg)
+        &__img
+            height: 16px
+            object-fit: cover
