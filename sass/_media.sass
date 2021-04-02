@@ -35,7 +35,6 @@
     .button
         &:hover
             background-color: rgba(54,179,126,0.3)
-
     .slider
         &-button
             &:hover
@@ -53,13 +52,79 @@
                 transition: 0.7s ease
                 color: $light
                 font-weight: 600
+
+@media (max-width: 1340px)
+    .review-card
+        left: -30px
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    br
+        display: none
+    .feature-card
+        max-width: 900px
+        margin-right: auto
+        margin-left: auto
+        &__info
+            flex-basis: 50%
+            padding: 22px 28px 22px 22px
+        &__img
+            flex-basis: 50%
+        &__foto
+            width: 100%
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 10px
+        &__subtitle
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 0
+            max-width: 300px
+    .offer-card
+        width: 450px
+        height: 500px
+        margin-bottom: 20px
+        &--small
+            padding: 10px 18px 37px 15px
+        &__title
+            font-size: 26px
+            line-height: 38px
+    .recent-wrapper
+        flex-wrap: wrap
+    .review
+        &-card
+            left: 0
+            &::after
+                display: none
+            &::before
+                display: none
+        &__title
+            font-size: 28px
+            line-height: 32px
+        &__subtitle
+            max-width: 400px
+    .subscribe
+        &__input
+            margin-bottom: 12px
+        &__button
+            margin-left: 0
+            width: 320px
+    .slider
+        &-button
+            &--prev
+                left: 2px
+    .slider
+        &-button
+            &--next
+                right: 2px
     .footer
-        &__socials
-            &-link
-                &:hover
-
-// @media (max-width: 1200px)
-
+        padding: 20px 0 50px
+        &-wrapper
+        &__info
+            margin: 0
+    .footer__menu-item+.footer__menu-item
+        margin-left: 0
 @media (max-width: 992px)
     .navbar
         &__wrapper

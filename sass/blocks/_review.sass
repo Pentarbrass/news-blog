@@ -9,11 +9,10 @@
         align-items: center
         padding: 37px 0 10px 0
     &-form
-        margin-top: 37px
+        margin-top: 40px
         max-height: 420px
         overflow-y: auto
     &-info
-        position: relative
         width: 480px
         height: 300px
     &__title
@@ -32,13 +31,40 @@
     &-card
         position: relative
         margin-top: -18px
-        margin-left: 44px
+        left: 44px
         padding: 8px 7px 32px 9px
         width: 466px
         height: 385px
         background-color: $light
         border-radius: 12px
         z-index: 5
+        &::before
+            content: ""
+            position: absolute
+            top: 228px
+            right: 290px
+            width: 237px
+            height: 202px
+            background: $light
+            mix-blend-mode: normal
+            opacity: 0.06
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+            border-radius: 16px
+            z-index: -2
+    &-card
+        &::after
+            content: ""
+            position: absolute
+            top: 44px
+            left: 466px
+            right: 0
+            bottom: 0
+            width: 51px
+            height: 200px
+            background: $blue
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+            border-radius: 0 16px 16px 0
+            z-index: 4
         &__img
             width: 450px
             height: 212px
@@ -60,30 +86,6 @@
             font-size: 18px
             line-height: 32px
             color: $subtitle
-        &__blue
-            position: absolute
-            top: 25px
-            left: 324px
-            right: 0
-            bottom: 0
-            width: 237px
-            height: 200px
-            background: $blue
-            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
-            border-radius: 16px
-            z-index: 4
-        &__shadow
-            position: absolute
-            top: 208px
-            right: 260px
-            width: 237px
-            height: 202px
-            background: $light
-            mix-blend-mode: normal
-            opacity: 0.06
-            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
-            border-radius: 16px
-            z-index: 4
 
 .subscribe
     padding: 20px 0 5px
