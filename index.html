@@ -52,6 +52,13 @@
                     </ul>
                     <button class="navbar__form-button">Получить</button>
                 </div>
+                <!-- /.navbar__wrapper -->
+                <button class="mobile-menu-open-btn">
+                    <span class="open-btn-item"></span>
+                    <span class="open-btn-item"></span>
+                    <span class="open-btn-item"></span>
+                </button>
+                <!-- /.mobile-menu-open-btn -->
             </div>
             <div class="main-screen">
                 <h1 class="main-title">Отдел новостей</h1>
@@ -817,6 +824,76 @@
         <!-- /.container -->
     </footer>
     <!-- /footer -->
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__wrapper">
+                <button class="mobile-menu__close-btn">
+                    <img src="img/close-mobile-menu.png" alt="Close menu" class="close-btn-icon">
+                </button>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="index.html" class="mobile-menu__link">Домой</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Лендинги
+                            <img src="img/drop-down-blue.png" class="icon mobile-menu__icon">
+                        </a>
+                        <ul class="mobile-menu__submenu-list">
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#"
+                                    class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №1
+                                </a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#"
+                                    class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №2
+                                </a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#"
+                                    class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №3
+                                </a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#"
+                                    class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №4
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Страницы
+                            <img src="img/drop-down-blue.png" class="icon mobile-menu__icon">
+                        </a>
+                        <ul class="mobile-menu__submenu-list">
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#" class="mobile-menu__submenu-link">Страница №1</a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#" class="mobile-menu__submenu-link">Страница №2</a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#" class="mobile-menu__submenu-link">Страница №3</a>
+                            </li>
+                            <li class="mobile-menu__submenu-item">
+                                <a href="#" class="mobile-menu__submenu-link">Страница №4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">Помощь
+                        </a>
+                    </li>
+                </ul>
+                <button class="mobile-menu__button modal-open-btn">Получить</button>
+            </div>
+            <!-- /.mobile-menu__wrapper -->
+        </div>
+        <!-- /.mobile-menu__inner -->
+    </div>
+    <!-- /.mobile-menu -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>

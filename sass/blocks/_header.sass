@@ -55,6 +55,7 @@
             background-color: transparent
             font-weight: bold
             cursor: pointer
+            outline: none
             font-size: 16px
             line-height: 22px
     &-dropdown
@@ -155,3 +156,23 @@
         border-radius: 4px
         outline: none
         cursor: pointer
+//Мобильное меню
+.mobile-menu-open-btn
+    width: 34px
+    height: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    display: none
+    border: none
+    outline: none
+    cursor: pointer
+    background-color: transparent
+.open-btn-item
+    display: block
+    width: 100%
+    height: 2px
+    background-color: $light
+    border-radius: 32px
+    &--black
+        background-color: $light
