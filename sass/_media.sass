@@ -1,4 +1,62 @@
-// @media (min-width: 1200px)
+@media (min-width: 1200px)
+    .navbar
+        &__item
+            &:hover
+                &::after
+                    width: 78%
+                    left: 0
+        &-dropdown
+            &__item
+                &:hover
+                    background-color: transparent
+                    border: 1px solid $light
+                    border-radius: 4px
+                    outline: none
+        &__form
+            &-button
+                &:hover
+                    transition: 0.7s ease
+                    background-color: $light
+                    color: $blue
+                    border: 2px solid $light
+    .search
+        &__button
+            &:hover
+                transition: 0.7s ease
+                color: $blue
+                background-color: $light
+                border: 1px solid $blue
+    .tags
+        &__link
+            &:hover
+                transition: 0.7s ease
+                background-color: $light
+                color: $blue
+    .button
+        &:hover
+            background-color: rgba(54,179,126,0.3)
+
+    .slider
+        &-button
+            &:hover
+                background-color: $offers
+    .subscribe
+        &__button
+            &:hover
+                transition: 0.7s ease
+                color: $blue
+                background-color: $light
+                border: 1px solid $blue
+    .footer
+        &__link
+            &:hover
+                transition: 0.7s ease
+                color: $light
+                font-weight: 600
+    .footer
+        &__socials
+            &-link
+                &:hover
 
 // @media (max-width: 1200px)
 

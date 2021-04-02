@@ -3,49 +3,60 @@
     padding: 128px 0 80px
     &__wrapper
         display: flex
-        align-items: flex-start
-        margin-bottom: 96px
+        align-items: center
+        margin-bottom: 80px
     &__info
         display: flex
         flex-direction: column
         max-width: 263px
-        margin-right: 29px
+        margin-right: 27px
+        margin-left: -15px
+        margin-top: -34px
     &__logo
         width: 90px
         height: 28px
-        margin-bottom: 28px
+        margin-bottom: 25px
         &-link
             height: 100%
     &__text
         font-size: 15px
         line-height: 28px
         color: $subtitle
-
+        margin-top: 5px
         margin-bottom: 32px
     &__socials
+        margin-bottom: 5px
+
         &-link
+            text-align: center
             height: 40px
             width: 40px
             border-radius: 50%
             overflow: hidden
             text-decoration: none
-            transition: 0.2s all
-            &:hover
-                background-color:
+        &-link:nth-child(1)
+            margin-right: 6px
+        &-link:nth-child(2)
+            margin-right: 11px
+        &-link:nth-child(3)
+            margin-right: 15px
+        &-link:nth-child(4)
+            margin-right: 15px
         &-link + a
             margin-left: 6px
         &-icon
             height: 100%
             object-fit: cover
             transition: 0.2s all
-            &:hover
 
     &__menu
         display: flex
         align-items: flex-start
-
+        &-item
+            margin-top: 50px
         &-item + &-item
             margin-left: 30px
+
     &__list
         min-width: 165px
         padding: 0
@@ -60,28 +71,34 @@
         font-weight: 400
         font-size: 16px
         line-height: 22px
-    &__item + li
+    &__item
         margin-top: 24px
+    &__spitem
+        margin-top: 12px
     &__link
         font-size: 16px
         line-height: 22px
         color: #959EAD
         text-decoration: none
     &__copyright
-        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
         &-text
             font-weight: 600
             font-size: 16px
             line-height: 22px
             color: $subtitle
+            margin-right: 30px
     &__like
-        margin: 0 auto
         width: 56px
         height: 56px
         border-radius: 50%
         object-fit: cover
         overflow: hidden
-        margin-bottom: 24px
+        margin-right: 30px
+        margin-bottom: 8px
         background-color: $blue
         display: flex
         justify-content: center
