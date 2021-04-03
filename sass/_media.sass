@@ -126,6 +126,8 @@
     .footer__menu-item+.footer__menu-item
         margin-left: 0
 @media (max-width: 992px)
+    .container
+        max-width: 700px
     .navbar
         &__wrapper
             display: none
@@ -133,6 +135,85 @@
         display: flex
         &--hidden
             display: none
+    .main
+        &-screen
+            padding: 5px 0
+    .search
+        &__input
+            max-width: 700px
+    .section-header
+        padding-top: 96px
+        display: flex
+        flex-direction: column
+        align-items: center
+    .popular
+        &-header
+            &__button
+                position: absolute
+                left: 50%
+                bottom: -408%
+                transform: translate(-50%, -50%)
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: center
+    .feature-card
+        height: 100%
+        &__title
+            margin: 2px 0
+    .offers
+        &__text
+            text-transform: uppercase
+    .post-info
+        margin-top: 24px
+    .offer-card
+        width: 100%
+        height: 450px
+    .recent
+        position: relative
+        &-header
+            &__button
+                position: absolute
+                left: 50%
+                bottom: -4%
+                transform: translate(-50%, -50%)
+    .slider
+        &-button
+            &--prev
+                left: -25px
+    .slider
+        &-button
+            &--next
+                right: -25px
+    .examples
+        position: relative
+        &-header
+            &__button
+                position: absolute
+                left: 50%
+                bottom: -9%
+                transform: translate(-50%, -50%)
+    .review
+        height: 100%
+        padding-bottom: 60px
+        &-wrapper
+            justify-content: center
+        &-info
+            display: none
+        &__title
+            max-width: 100%
+        &__subtitle
+            max-width: 100%
+    .footer
+        &__wrapper
+            align-items: start
+        &__menu
+            flex-wrap: wrap
+            justify-content: space-between
+            &-item
+                margin-top: 0
+        &__info
+            margin-top: 24px
+
 // @media (max-width: 767px)
 
 // @media (max-width: 576px)
