@@ -125,6 +125,7 @@
             margin: 0
     .footer__menu-item+.footer__menu-item
         margin-left: 0
+
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -146,6 +147,8 @@
         display: flex
         flex-direction: column
         align-items: center
+        &__subtitle
+            text-align: center
     .popular
         &-header
             &__button
@@ -180,8 +183,6 @@
         &-button
             &--prev
                 left: -25px
-    .slider
-        &-button
             &--next
                 right: -25px
     .examples
@@ -214,6 +215,101 @@
         &__info
             margin-top: 24px
 
-// @media (max-width: 767px)
+@media (max-width: 767px)
+    .container
+        max-width: 700px
+        width: 92%
+    .header
+        background-image: url('../img/background.jpg')
+        height: auto
+    .search
+        flex-direction: column
+        overflow: visible
+        height: 125px
+        background-color: transparent
+        &__input
+            background-color: $light
+            margin-bottom: 12px
+            border-radius: 8px
+            width: 100%
+            height: 48px
+        &__button
+            position: static
+            height: 48px
+    .tags
+        flex-direction: column
+        &__title
+            margin-bottom: 12px
+    .feature-card
+        flex-direction: column
+        &__info
+            border-width: 0px 1px 1px 1px
+            border-radius: 0 0 16px 16px
+        &__img
+            border-radius: 16px 16px 0 0
+            height: 220px
+            overflow: hidden
+        &__foto
+            max-width: none
+        &__title
+            font-size: 20px
+            line-height: 24px
+            margin-top: 8px
+        &__subtitle
+            max-width: none
+            font-size: 14px
+            line-height: 24px
+    .user-name
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+    .verification
+        &__info
+            font-weight: normal
+            font-size: 12px
+            line-height: 16px
+    .popular
+        &__card
+            margin-top: -76px
+        &-header
+            &__button
+                bottom: -460%
+    .section
+        &-header
+            &__subtitle
+                font-size: 13px
+                line-height: 24px
+                text-align: center
+    .offer-card
+        height: 380px
+        &__wrapper
+            height: 70%
+            &--small
+                height: 100%
+    .slider-button
+        width: 45px
+        height: 46px
+        &--prev
+            left: -15px
+        &--next
+            right: -15px
+    .review
+        &__title
+            max-width: 70%
+    .footer
+        &__wrapper
+            flex-direction: column-reverse
+            align-items: center
+            padding: 0 90px
+        &__info
+            margin-right: 15px
+        &__copyright
+            display: none
+        &__spitem
+            margin-top: 24px
+    .mb-visible
+        display: inline
+    .mb-hide
+        display: none
 
 // @media (max-width: 576px)
