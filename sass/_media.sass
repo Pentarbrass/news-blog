@@ -82,10 +82,11 @@
             margin-bottom: 0
             max-width: 300px
     .offer-card
-        width: 450px
+        width: 470px
         height: 500px
         margin-bottom: 20px
         &--small
+            width: 300px
             padding: 10px 18px 37px 15px
         &__title
             font-size: 26px
@@ -150,12 +151,12 @@
         &__subtitle
             text-align: center
     .popular
-        &-header
-            &__button
-                position: absolute
-                left: 50%
-                bottom: -408%
-                transform: translate(-50%, -50%)
+        position: relative
+        &__button
+            position: absolute
+            left: 50%
+            bottom: -3%
+            transform: translate(-50%, -50%)
         &-wrapper
             flex-wrap: wrap
             justify-content: center
@@ -224,7 +225,6 @@
         height: auto
     .search
         flex-direction: column
-        overflow: visible
         height: 125px
         background-color: transparent
         &__input
@@ -271,9 +271,8 @@
     .popular
         &__card
             margin-top: -76px
-        &-header
-            &__button
-                bottom: -460%
+        &__button
+            bottom: -3%
     .section
         &-header
             &__subtitle
@@ -303,6 +302,9 @@
             padding: 0 90px
         &__info
             margin-right: 15px
+            align-items: center
+        &__text
+            text-align: center
         &__copyright
             display: none
         &__spitem
@@ -311,5 +313,229 @@
         display: inline
     .mb-hide
         display: none
+    .mobile-menu
+        &__inner
+            right: 4%
 
-// @media (max-width: 576px)
+@media (max-width: 576px)
+    .container
+        width: 90%
+    .header
+        height: 482px
+    .logo
+        width: 77px
+        height: 24px
+    .navbar
+        padding: 15px 7px 26px 7px
+    .mobile-menu-open-btn
+        padding-right: 1px
+        width: 30px
+    .main-title
+        font-size: 32px
+        line-height: 40px
+    .search
+        max-width: 272px
+        &-wrapper
+            padding-top: 12px
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__input
+            width: 270px
+            padding: 10px 10px 10px 43px
+            background-position: left 14px bottom 50%
+    .tags
+        width: 100%
+        padding: 0 3px 31px 7px
+        &__title
+            font-size: 14px
+            line-height: 20px
+        &__wrapper
+            flex-wrap: wrap
+        &__link
+            margin-bottom: 10px
+    .popular
+        &__card
+            margin-top: -63px
+        &__button
+            bottom: -2%
+    .feature-card
+        &__img
+            height: 157px
+        &__info
+            padding: 20px 20px 22px 18px
+        &__title
+            margin-bottom: 0
+    .offers
+        padding: 4px 12px
+    .avatar
+        width: 36px
+        height: 36px
+    .post
+        &-date
+            font-size: 14px
+            line-height: 20px
+        &-info
+            &--fixmobile
+                margin-top: 2px
+            &--mobile
+                margin-top: 9px
+            &--small
+                margin-top: 7px
+    .section
+        &-header
+            padding-top: 49px
+            padding-bottom: 21px
+            &__title
+                margin: 0 0 14px 0
+                font-size: 24px
+                line-height: 32px
+            &__subtitle
+                font-size: 11px
+                line-height: 24px
+            &__description
+                max-height: 72px
+            &__button
+                width: 172px
+                height: 40px
+                padding: 7px 12px 10px 15px
+    .offer-card
+        margin-bottom: 15px
+        border-radius: 12px
+        height: 320px
+        padding: 19px 20px 16px 20px
+        &--small
+            padding-right: 17px
+        &__button
+            padding: 3px 8px
+        &__text
+            font-size: 14px
+            line-height: 20px
+        &__title
+            margin-bottom: 0
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.2px
+            color: #FAFAFB
+            &--mt
+                margin-top: 27px
+            &--small
+                margin-bottom: 8px
+        &__info
+            margin: 0
+            font-size: 14px
+            line-height: 21px
+        &__wrapper
+            padding: 30px 2px 4px 1px
+            &--mobile
+                justify-content: flex-end
+        &__date
+            margin-right: 0
+    .recent
+        &-header
+            padding-top: 74px
+            padding-bottom: 10px
+            &__title
+                margin-bottom: 0
+            &__subtitle
+                font-size: 14px
+                line-height: 24px
+            &__button
+                bottom: -6%
+    .examples
+        &-header
+            padding-top: 83px
+            padding-bottom: 8px
+            &__subtitle
+                font-size: 14px
+                line-height: 24px
+            &__button
+                left: 48%
+                bottom: -6%
+        &__text
+            font-size: 14px
+            line-height: 20px
+        &__offers
+            padding: 3px 17px
+    .slider-button
+        width: 39px
+        height: 40px
+        top: 35.7%
+        &__img
+            height: 13px
+        &--prev
+            left: -8px
+        &--next
+            right: -8px
+    .united
+        padding-bottom: 97px
+        &-header
+            padding-top: 65px
+            margin-right: 6px
+            padding-bottom: 27px
+            &__title
+                margin-bottom: 12px
+            &__subtitle
+                font-size: 14px
+                line-height: 24px
+            &__description
+                max-height: 97px
+        &__offer-card
+            padding-top: 22px
+        &__button
+            margin-top: 28px
+    .wave__img
+        display: none
+    .review
+        margin-top: 0
+        padding-bottom: 17px
+        &__title
+            margin-bottom: 0
+            font-size: 24px
+            line-height: 32px
+        &__subtitle
+            margin-top: -3px
+            font-size: 14px
+            line-height: 27px
+        &-wrapper
+            padding-left: 8px
+        &-form
+            margin-top: 16px
+    .subscribe
+        padding-top: 8px
+        &__input
+            width: 272px
+            height: 48px
+        &__button
+            width: 272px
+            height: 48px
+    .footer
+        padding: 20px 0 2px
+        &__wrapper
+            padding: 0 8px 0 8px
+            margin-bottom: 70px
+        &__list-title
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 20px
+        &__menu
+            padding-right: 20px
+        &__list
+            min-width: 110px
+        &__link
+            font-size: 14px
+            line-height: 20px
+        &__item
+            margin-top: 14px
+        &__info
+            margin-right: 0
+            align-items: center
+        &__logo
+            width: 77px
+            height: 24px
+            margin-bottom: 16px
+        &__text
+            font-size: 14px
+            text-align: center
+            margin-bottom: 24px
