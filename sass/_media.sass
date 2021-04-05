@@ -221,7 +221,7 @@
         max-width: 700px
         width: 92%
     .header
-        background-image: url('../img/background.jpg')
+        background-size: auto
         height: auto
     .search
         flex-direction: column
@@ -295,11 +295,13 @@
     .review
         &__title
             max-width: 70%
+    .thankyou-title
+        max-width: 100%
     .footer
         &__wrapper
             flex-direction: column-reverse
             align-items: center
-            padding: 0 90px
+            padding: 0 90px 0 0
         &__info
             margin-right: 15px
             align-items: center
@@ -485,13 +487,18 @@
             padding-top: 22px
         &__button
             margin-top: 28px
-    .wave__img
-        display: none
+    .wave
+        position: absolute
+        margin-top: -19px
+        &__img
+
+            object-fit: none
     .review
-        margin-top: 0
+        margin-top: -12px
         padding-bottom: 17px
         &__title
-            margin-bottom: 0
+            margin-top: 14px
+            margin-bottom: 5px
             font-size: 24px
             line-height: 32px
         &__subtitle
@@ -539,3 +546,18 @@
             font-size: 14px
             text-align: center
             margin-bottom: 24px
+    .mobile-menu__inner
+        right: 2%
+    .sign-up-modal
+        &__inner
+            padding: 10% 0px
+        &__google-sign-up-btn
+            max-width: 290px
+            margin: 0 auto 32px
+            padding-right: 5%
+        &__content
+            padding: 0px 8%
+        &__subtitle
+            &::before,
+            &::after
+                display: none

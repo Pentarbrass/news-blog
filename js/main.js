@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var hotelSlider = new Swiper('.examples-slider', {
   // Optional parameters
   loop: true,
@@ -13,7 +14,7 @@ var hotelSlider = new Swiper('.examples-slider', {
     onlyInViewport: false,
   },
 });
-
+});
 
 // Mobile menu
     function closeMobileMenu() {
@@ -58,5 +59,83 @@ var hotelSlider = new Swiper('.examples-slider', {
         $(this).toggleClass('mobile-menu__submenu-link--active');
     });
 
+//modal-menu
+var modalBtn = $('.modal-open-btn');
+var modalOverlay = $('.modal-overlay');
+var modal = $('.sign-up-modal');
+var modalCloseBtn = $('.sign-up-modal__close-btn');
 
 
+function closeModal() {
+    modalOverlay.removeClass('modal-overlay--active');
+    modal.removeClass('sign-up-modal--active');
+    $('.sign-up-modal__form').trigger('reset');
+};
+
+
+$(document).ready(function () {
+
+    // Modal open/close
+    modalBtn.on('click', function () {
+        modalOverlay.addClass('modal-overlay--active');
+        modal.addClass('sign-up-modal--active');
+        closeMobileMenu();
+    });
+
+    modalCloseBtn.on('click', function() {
+        closeModal();
+    });
+
+    modalOverlay.on('click', function() {
+        closeModal();
+    });
+
+    $(document).keyup(function (e) { 
+        if (e.which === 27) {
+            closeModal();
+        }
+    });
+});
+
+//Обработка форм
+  $('.valid-form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Введите Ваше имя",
+        minlength: "Слишком короткое имя"
+      },
+      email: {
+        required: "Введите Ваш email",
+        email: "Не верный формат, 'name@domain.com'"
+      },
+      phone: {
+        required: "Введите ваш номер телефона",
+        minlength: "Не верно указанный номер"
+      },
+      },
+  });
+  });
+$('.valid-mail-form').each(function () {
+    $(this).validate({
+    errorClass: "invalid-mail",
+    messages: {
+    email: {
+        required: "Введите Ваш email",
+        email: "Не верный формат, 'name@domain.com'"
+    }
+    },
+    });
+});
+//Настройка маски
+  $(document).ready(function () {
+    $('.phone-with-ddd').mask('+7(999)999-99-99');
+  });
+  AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
+  lazyframe('.lazyframe');
