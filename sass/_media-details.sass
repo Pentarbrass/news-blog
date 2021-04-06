@@ -1,0 +1,312 @@
+@media (min-width: 1200px)
+    .footer__socials-link:nth-child(1)
+        margin-right: 3px
+    .comments
+        &-button
+            &:hover
+                transition: 0.7s ease
+                color: $blue
+                background-color: $light
+                border: 1px solid $blue
+    .details
+        &-button
+            &:hover
+                background-color: $offers
+
+@media (max-width: 1200px)
+    .social
+        left: 5%
+
+@media (max-width: 992px)
+    .mobile-menu
+        &__inner
+            right: 11%
+    .social
+        position: static
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 24px 29px 30px 26px
+        max-width: 250px
+        &__items
+            flex-direction: row
+            justify-content: space-between
+            width: 135px
+    .details
+        &-button
+            &--next
+                right: 1%
+            &--prew
+                left: 1%
+    .comments
+        &-wrapper
+            flex-direction: column
+        &__item
+            margin-top: 16px
+        &-field
+            position: relative
+        &-form
+            max-width: 555px
+        &-input
+            min-width: 450px
+        &-button
+            position: absolute
+            top: 100%
+            margin-left: 0
+            margin-top: 16px
+            padding: 14px 18px
+    .info
+        &-quote
+            &__text
+                font-size: 32px
+                line-height: 50px
+            &__author
+                bottom: -25%
+        &-grid
+            display: grid
+            grid-template-columns: 300px 300px
+            grid-template-rows: 225px 225px
+            grid-gap: 20px
+            padding: 12px 29px 0 26px
+            margin-bottom: 47px
+            &__item
+                border-radius: 16px
+                overflow: hidden
+            &__item:nth-child(1)
+                grid-row-start: 1
+                grid-row-end: 2
+                grid-column-start: 1
+                grid-column-end: 3
+                width: 100%
+            &__item:nth-child(2)
+                grid-row-start: 2
+                grid-row-end: 3
+                grid-column-start: 1
+                grid-column-end: 2
+            &__item:nth-child(3)
+                grid-row-start: 2
+                grid-row-end: 3
+                grid-column-start: 2
+                grid-column-end: 3
+            &__description
+                margin-top: 5px
+
+@media (max-width: 768px)
+    .details
+        &-main-title
+            font-size: 32px
+            line-height: 40px
+        &-wrapper
+            margin-top: 50px
+    .info
+        &-text
+            padding-top: 10px
+            font-size: 16px
+            line-height: 28px
+        &-main
+            &__title
+                font-size: 26px
+                line-height: 36px
+        &-second
+            &__title
+                font-size: 26px
+                line-height: 36px
+        &-quote
+            &__text
+                font-size: 23px
+                line-height: 30px
+                text-align: center
+                letter-spacing: 1px
+            &__subtext
+                font-size: 16px
+                line-height: 22px
+            &__author
+                bottom: -33%
+        &-grid
+            display: grid
+            justify-items: center
+            grid-template-columns: 1fr 1fr
+    .comments
+        &-form
+            max-width: 500px
+        &-input
+            min-width: 400px
+        &__item
+            max-width: 500px
+        &__title
+            font-size: 26px
+            line-height: 36px
+
+@media (max-width: 576px)
+    .general-section
+        margin-bottom: 144px
+    .details
+        &-header
+            height: 360px
+        &-logo
+            margin-left: 10px
+        &-main-title
+            font-size: 32px
+            line-height: 40px
+            text-align: center
+            letter-spacing: 0.2px
+            margin-top: 44px
+            margin-left: 0
+        &-post-info
+            padding: 0 7px 0 7px
+        &-post-date
+            font-size: 10px
+            line-height: 14px
+        &-wrapper
+            margin-top: 32px
+            padding: 0 2px 0 4px
+        &-button
+            width: 39px
+            height: 40px
+            top: 50%
+            &__img
+                height: 13px
+            &--prew
+                left: -5%
+            &--next
+                right: -2%
+        &-footer
+            padding-top: 8px
+    .info
+        &-text
+            margin-top: 30px
+            margin-bottom: 40px
+            padding: 0 7px 0 7px
+        &-text
+            padding-top: 10px
+            font-size: 16px
+            line-height: 28px
+        &-foto
+            padding: 34px 8px 10px 8px
+        &-img
+            min-width: 272px
+            max-height: 200px
+        &-description
+            font-size: 12px
+            line-height: 16px
+            padding: 7px
+        &-main
+            padding: 41px 7px 0 7px
+            &__title
+                font-size: 21px
+                line-height: 32px
+                letter-spacing: 0.2px
+                margin-bottom: 19px
+            &__text
+                font-size: 12px
+                line-height: 22px
+                &--fixed
+                    min-width: 270px
+                    padding: 0 1px 0 2px
+            &__subtitle
+                font-size: 20px
+                line-height: 24px
+                letter-spacing: 0.2px
+                width: 281px
+                margin-top: 42px
+                margin-bottom: 12px
+                &--fixed
+                    margin-top: 30px
+        &-second
+            padding: 16px 5px 0 9px
+            &__title
+                word-wrap: break-word
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: 0.2px
+            &__text
+                font-size: 12px
+                line-height: 22px
+                margin-top: 13px
+                padding-right: 3px
+            &__subtitle
+                font-size: 20px
+                line-height: 24px
+                letter-spacing: 0.2px
+                margin-top: 35px
+                &--fixed
+                    margin-top: 18px
+                    margin-bottom: 14px
+            &--fixed
+                padding: 31px 5px 0 7px
+        &-quote
+            margin: 80px -16px 70px -16px
+            border-radius: 0
+            padding: 57px 24px 75px 24px
+            &__text
+                margin-top: 32px
+                margin-bottom: 65px
+            &__subtext
+                padding: 0 30px
+            &__author
+                width: 96px
+                height: 96px
+                bottom: -16%
+        &-grid
+            display: grid
+            grid-template-columns: 130px / 1fr, 130px / 1fr
+            grid-template-rows: 176px 100px
+            grid-gap: 12px
+            padding: 1px 7px 0 8px
+            margin-top: 93px
+            margin-bottom: 0
+            &__description
+                font-size: 12px
+                line-height: 16px
+                margin-top: 2px
+    .social
+        margin-top: 55px
+        padding: 24px 29px 3px 7px
+        &__title
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 25px
+        &__items
+            margin-right: 16px
+    .main-post-info
+        margin-top: 13px
+        padding: 0 7px 0 8px
+    .comments
+        padding: 0 7px 0 7px
+        margin-top: 42px
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 24px
+        &__text
+            font-size: 14px
+            line-height: 24px
+        &-form
+            max-width: 272px
+        &-input
+            min-width: 200px
+            padding: 4px 16px
+            height: 62px
+            &::placeholder
+                color: #959EAD
+                font-size: 14px
+                line-height: 20px
+        &-button
+            padding: 9px 18px
+        &__item
+            max-width: 272px
+            padding: 14px
+            margin-top: 14px
+        &-field
+            margin-top: 23px
+            padding: 0 2px 0 6px
+    .review
+        &__title
+            &--fix
+                margin-top: 17px
+
+    .hide
+        display: none
+    .vis-fix
+        display: inline

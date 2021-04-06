@@ -1,0 +1,334 @@
+.general-section
+    margin-bottom: 98px
+    position: relative
+.details
+    &-header
+        background-image: url('../img/details/d-main-bg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        padding: 0 0 50px 0
+        height: 640px
+    &-navbar
+        margin-left: -10px
+        &__wrapper
+            margin-right: 10px
+    &-main
+        &-screen
+        &-title
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 48px
+            line-height: 72px
+            text-align: center
+            letter-spacing: 0.2px
+            color: $light
+            max-width: 712px
+            margin-top: 21px
+            margin-left: 62px
+    &-post-info
+        padding: 0 29px 0 26px
+    &-post-date
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+    &-wrapper
+        position: relative
+        margin-top: 102px
+        padding: 0 29px 0 26px
+    &-button
+        position: absolute
+        top: 45%
+        transform: translateY(-50%)
+        z-index: 99
+        width: 54px
+        height: 56px
+        background-color: $blue
+        border-radius: 50%
+        border: none
+        outline: none
+        cursor: pointer
+        &__img
+            height: 16px
+            object-fit: cover
+        &--next
+            right: -1px
+            background-image: url(../img/arrow-next.svg)
+        &--prew
+            left: -1px
+            background-image: url(../img/arrow-prev.svg)
+    &-footer
+        padding: 118px 0 80px 113px
+
+.info
+    &-container
+        max-width: 804px
+        margin: auto
+    &-text
+        font-size: 20px
+        line-height: 32px
+        color: $subtitle
+        margin-top: 0
+        padding: 0 29px 0 26px
+    &-foto
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 44px 29px 10px 26px
+    &-img
+        overflow: hidden
+        border-radius: 16px
+        width: 750px
+        height: 360px
+    &-slide
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-description
+        font-size: 14px
+        line-height: 20px
+        color: $subtitle
+        padding: 11px
+    &-main
+        padding: 0 29px 0 26px
+        &__title
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 48px
+            letter-spacing: 0.2px
+            color: $title
+            margin-top: 0
+            margin-bottom: 0
+        &__subtitle
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: $title
+            margin-bottom: 4px
+            margin-top: 22px
+            &--fixed
+                margin-bottom: 14px
+                margin-top: 15px
+        &__text
+            font-size: 16px
+            line-height: 26px
+            color: $subtitle
+            margin-top: 0
+            &--fixed
+                line-height: 28px
+    &-second
+        padding: 6px 29px 0 26px
+        &--fixed
+            padding-top: 84px
+        &__title
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 48px
+            letter-spacing: 0.2px
+            color: $title
+            margin-top: 0
+            margin-bottom: 0
+        &__subtitle
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: $title
+            margin-top: -5px
+            margin-bottom: 10px
+            &--fixed
+                margin-bottom: 16px
+        &__text
+            font-size: 16px
+            line-height: 28px
+            color: $subtitle
+            margin-top: 2px
+    &-quote
+        position: relative
+        margin: 28px auto 30px
+        padding: 57px 64px 75px 64px
+        max-width: 750px
+        background-image: url('../img/details/d-comment-bg.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        border-radius: 16px
+        display: flex
+        align-items: center
+        flex-direction: column
+        &__text
+            font-family: Roboto
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 60px
+            text-align: center
+            letter-spacing: 0.09px
+            color: $light
+            margin-bottom: 14px
+        &__subtext
+            font-size: 18px
+            line-height: 25px
+            text-align: center
+            color: $light
+        &__author
+            position: absolute
+            width: 120px
+            height: 120px
+            bottom: -21%
+            transform: translateY(-50%)
+            border-radius: 8px
+    &-grid
+        display: grid
+        grid-template-columns: 360px 360px
+        grid-template-rows: 225px 225px
+        grid-gap: 30px
+        padding: 12px 29px 0 26px
+        margin-bottom: 47px
+        &__item
+            border-radius: 16px
+            overflow: hidden
+        &__item:nth-child(1)
+            grid-row-start: 1
+            grid-row-end: 3
+            height: 100%
+        &__item:nth-child(2)
+            grid-row-start: 1
+            grid-row-end: 2
+            grid-column-start: 2
+            grid-column-end: 3
+            width: 100%
+            height: 100%
+        &__item:nth-child(3)
+            grid-row-start: 2
+            grid-row-end: 3
+            grid-column-start: 2
+            grid-column-end: 3
+            width: 100%
+            height: 100%
+        &__description
+            font-size: 14px
+            line-height: 20px
+            color: $subtitle
+            grid-column-start: 1
+            grid-column-end: 3
+            justify-self: center
+            margin-top: -17px
+.social
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    top: 0
+    left: 10.3%
+    &__title
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: $subtitle
+        margin-bottom: 33px
+    &__items
+        display: flex
+        flex-direction: column
+    &__link
+        margin-bottom: 29px
+
+.main-post-info
+    position: relative
+    padding: 0 29px 0 26px
+    margin-top: 60px
+    &::after
+        content: ""
+        position: absolute
+        display: block
+        width: 93%
+        top: -50%
+        border: 1px solid $subtitle
+        opacity: 0.1
+    &::before
+        content: ""
+        position: absolute
+        display: block
+        width: 93%
+        top: 150%
+        border: 1px solid $subtitle
+        opacity: 0.1
+
+.comments
+    padding: 0 29px 0 26px
+    margin-top: 80px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: start
+        margin-bottom: 24px
+    &__item
+        width: 555px
+        padding: 20px
+        background-color: rgba(179,186,197,0.15)
+        border-radius: 0 16px 16px 16px
+    &__text
+        margin: 0
+        font-size: 16px
+        line-height: 28px
+        color: $subtitle
+
+    &__title
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: 0.2px
+        color: $title
+        margin-top: 0
+    &-field
+        padding: 0 29px 0 26px
+        margin-top: 30px
+    &-form
+        display: flex
+        align-items: center
+        background: $light
+        border: 1px solid #E5EAF4
+        border-radius: 8px
+    &-input
+        max-width: 500px
+        min-width: 500px
+        height: 64px
+        padding: 10px 15px
+        outline: none
+        border: none
+        &::placeholder
+            color: #959EAD
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+    &-button
+        margin-left: 27px
+        padding: 9px 3px
+        border-radius: 8px
+        color: $light
+        background-color: $blue
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        border: none
+        outline: none
+        cursor: pointer
+.form-avatar
+    margin-left: 15px
+.date
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $subtitle

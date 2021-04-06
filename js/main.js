@@ -1,5 +1,5 @@
 $(document).ready(function () {
-var hotelSlider = new Swiper('.examples-slider', {
+var examplesSlider = new Swiper('.examples-slider', {
   // Optional parameters
   loop: true,
 
@@ -7,6 +7,24 @@ var hotelSlider = new Swiper('.examples-slider', {
   navigation: {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+});
+
+$(document).ready(function () {
+var detailsSlider = new Swiper('.details-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.details-button--next',
+    prevEl: '.details-button--prev',
   },
 
   keyboard: {
