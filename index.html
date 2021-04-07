@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Отдел новостей</title>
 </head>
@@ -23,30 +24,38 @@
                 <a href="index.html" class="main-logo"><img src="img/Logo.svg" alt="Logo: Ehya" class="logo"></a>
                 <div class="navbar__wrapper">
                     <ul class="navbar__menu">
-                        <li class="navbar__item"><a href="#" class="navbar__link">Домой</a></li>
+                        <li class="navbar__item"><a href="index.html" class="navbar__link">Домой</a></li>
                         <li class="navbar__item dropdown-item"><a href="#"
                                 class="navbar__link dropdown-link">Лендинги</a>
                             <ul class="navbar-dropdown">
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Лендинг
                                         №1</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Лендинг
                                         №2</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Лендинг
                                         №3</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Лендинг
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Лендинг
                                         №4</a></li>
                             </ul>
                         </li>
                         <li class="navbar__item dropdown-item"><a href="#"
                                 class="navbar__link dropdown-link">Страницы</a>
                             <ul class="navbar-dropdown">
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Страница
                                         №1</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Страница
                                         №2</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Страница
                                         №3</a></li>
-                                <li class="navbar-dropdown__item"><a href="#" class="navbar-dropdown__link">Страница
+                                <li class="navbar-dropdown__item"><a href="details.html"
+                                        class="navbar-dropdown__link">Страница
                                         №4</a></li>
                             </ul>
                         </li>
@@ -87,15 +96,15 @@
 
     <section class="popular">
         <div class="container">
-            <div class="feature-card popular__card">
+            <div class="feature-card popular__card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="feature-card__img">
-                    <a href="#" class="card-click"></a>
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/feature-img.jpg" alt="Image: Cheep aviatickets" class="feature-card__foto">
                 </div>
                 <!-- /.feature-card__img -->
                 <div class="feature-card__info">
                     <a href="#" class="offers"><span class="offers__text">Предложения</span></a>
-                    <a href="#" class="click-title">
+                    <a href="details.html" class="click-title">
                         <h3 class="feature-card__title">Дешевые Авиабилеты - Отличный Способ Сэкономить</h3>
                         <p class="feature-card__subtitle">В этом цифровом поколении, где информацию<br>
                             можно легко получить за секунды, визитки ...</p>
@@ -134,8 +143,8 @@
             </div>
             <!-- /.section-header -->
             <div class="popular-wrapper">
-                <div class="offer-card">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card" data-aos="fade-down-right" data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/offer-img-1.png" alt="Image: Offer image" class="offer-card__img">
                     <a href="#" class="offer-card__button"><span class="offer-card__text">Предложения</span></a>
                     <div class="offer-card__wrapper">
@@ -160,8 +169,8 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card" data-aos="fade-down-left" data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/offer-img-2.png" alt="Image: Offer image" class="offer-card__img">
                     <a href="#" class="offer-card__button"><span class="offer-card__text">Предложения</span></a>
                     <div class="offer-card__wrapper offer-card__wrapper--mobile">
@@ -208,9 +217,10 @@
             </div>
             <!-- /.section-header -->
             <div class="recent-wrapper">
-                <div class="offer-card offer-card--small">
+                <div class="offer-card offer-card--small" data-aos="zoom-in-left" data-aos-delay="100"
+                    data-aos-duration="1000">
                     <img src="img/small-card-1.png" alt="Image: Offer image" class="offer-card__img">
-                    <a href="#" class="card-click"></a>
+                    <a href="details.html" class="card-click"></a>
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <div class="small-wrapper">
                             <h3 class="offer-card__title offer-card__title--small">Будущее Работы</h3>
@@ -237,9 +247,10 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card offer-card--small">
+                <div class="offer-card offer-card--small" data-aos="zoom-in-left" data-aos-delay="200"
+                    data-aos-duration="1000">
                     <img src="img/small-card-2.png" alt="Image: Offer image" class="offer-card__img">
-                    <a href="#" class="card-click"></a>
+                    <a href="details.html" class="card-click"></a>
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <div class="small-wrapper">
                             <h3 class="offer-card__title offer-card__title--small">Будущее Данных</h3>
@@ -265,9 +276,10 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card offer-card--small">
+                <div class="offer-card offer-card--small" data-aos="zoom-in-left" data-aos-delay="300"
+                    data-aos-duration="1000">
                     <img src="img/small-card-3.png" alt="Image: Offer image" class="offer-card__img">
-                    <a href="#" class="card-click"></a>
+                    <a href="details.html" class="card-click"></a>
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <div class="small-wrapper">
                             <h3 class="offer-card__title offer-card__title--small">Будущее Обучения</h3>
@@ -314,7 +326,7 @@
                 </div>
             </div>
             <!-- /.section-header -->
-            <div class="examples__wrapper">
+            <div class="examples__wrapper" data-aos="zoom-out-up" data-aos-duration="1000">
                 <div class="swiper-container examples-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -325,9 +337,9 @@
                                 </div>
                                 <!-- /.feature-card__img -->
                                 <div class="feature-card__info">
-                                    <a href="#" class="offers examples__offers"><span
+                                    <a href="details.html" class="offers examples__offers"><span
                                             class="offers__text examples__text">Предложения</span></a>
-                                    <a href="#" class="click-title">
+                                    <a href="details.html" class="click-title">
                                         <h3 class="feature-card__title">Дешевые Авиабилеты - Отличный Способ Сэкономить
                                         </h3>
                                         <p class="feature-card__subtitle">В этом цифровом поколении, где информацию<br>
@@ -335,7 +347,7 @@
                                     </a>
                                     <div class="post-info">
                                         <div class="user-info">
-                                            <a href="#" class="card-click"></a>
+                                            <a href="details.html" class="card-click"></a>
                                             <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
                                             <div class="user-info__wrapper">
                                                 <span class="user-name">Viola Manisa</span>
@@ -363,9 +375,9 @@
                                 </div>
                                 <!-- /.feature-card__img -->
                                 <div class="feature-card__info">
-                                    <a href="#" class="offers"><span
+                                    <a href="details.html" class="offers"><span
                                             class="offers__text examples__text">Предложения</span></a>
-                                    <a href="#" class="click-title">
+                                    <a href="details.html" class="click-title">
                                         <h3 class="feature-card__title">Все на борт! Пусть будет Рок!
                                         </h3>
                                         <p class="feature-card__subtitle">Музыка AC/DC способна изменить этот цифровой
@@ -373,7 +385,7 @@
                                     </a>
                                     <div class="post-info">
                                         <div class="user-info">
-                                            <a href="#" class="card-click"></a>
+                                            <a href="details.html" class="card-click"></a>
                                             <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
                                             <div class="user-info__wrapper">
                                                 <span class="user-name">Viola Manisa</span>
@@ -401,9 +413,9 @@
                                 </div>
                                 <!-- /.feature-card__img -->
                                 <div class="feature-card__info">
-                                    <a href="#" class="offers"><span
+                                    <a href="details.html" class="offers"><span
                                             class="offers__text examples__text">Предложения</span></a>
-                                    <a href="#" class="click-title">
+                                    <a href="details.html" class="click-title">
                                         <h3 class="feature-card__title">Лучшие путешествия поездом
                                         </h3>
                                         <p class="feature-card__subtitle">Весь мир как на ладоне, скорость и комфорт в
@@ -411,7 +423,7 @@
                                     </a>
                                     <div class="post-info">
                                         <div class="user-info">
-                                            <a href="#" class="card-click"></a>
+                                            <a href="details.html" class="card-click"></a>
                                             <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
                                             <div class="user-info__wrapper">
                                                 <span class="user-name">Viola Manisa</span>
@@ -439,9 +451,9 @@
                                 </div>
                                 <!-- /.feature-card__img -->
                                 <div class="feature-card__info">
-                                    <a href="#" class="offers"><span
+                                    <a href="details.html" class="offers"><span
                                             class="offers__text examples__text">Предложения</span></a>
-                                    <a href="#" class="click-title">
+                                    <a href="details.html" class="click-title">
                                         <h3 class="feature-card__title">Путешествуй! Открой для себя мир!
                                         </h3>
                                         <p class="feature-card__subtitle">Миллионы жизней приокроют завесу тайны и
@@ -449,7 +461,7 @@
                                     </a>
                                     <div class="post-info">
                                         <div class="user-info">
-                                            <a href="#" class="card-click"></a>
+                                            <a href="details.html" class="card-click"></a>
                                             <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
                                             <div class="user-info__wrapper">
                                                 <span class="user-name">Viola Manisa</span>
@@ -477,9 +489,9 @@
                                 </div>
                                 <!-- /.feature-card__img -->
                                 <div class="feature-card__info">
-                                    <a href="#" class="offers"><span
+                                    <a href="details.html" class="offers"><span
                                             class="offers__text examples__text">Предложения</span></a>
-                                    <a href="#" class="click-title">
+                                    <a href="details.html" class="click-title">
                                         <h3 class="feature-card__title">Дешевые Авиабилеты - Отличный Способ Сэкономить
                                         </h3>
                                         <p class="feature-card__subtitle">В этом цифровом поколении, где информацию<br>
@@ -488,7 +500,7 @@
                                     </a>
                                     <div class="post-info">
                                         <div class="user-info">
-                                            <a href="#" class="card-click"></a>
+                                            <a href="details.html" class="card-click"></a>
                                             <img src="img/avatar.png" alt="Icon: Avatar" class="avatar">
                                             <div class="user-info__wrapper">
                                                 <span class="user-name">Viola Manisa</span>
@@ -536,8 +548,8 @@
             </div>
             <!-- /.section-header -->
             <div class="united__wrapper">
-                <div class="offer-card united__offer-card">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card united__offer-card" data-aos="fade-down-right" data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/united-1.png" alt="Image: Offer image" class="offer-card__img">
                     <a href="#" class="offer-card__button united__offer"><span
                             class="offer-card__text">Предложения</span></a>
@@ -563,8 +575,8 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card united__offer-card">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card united__offer-card" data-aos="fade-down-left" data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/united-2.png" alt="Image: Offer image" class="offer-card__img">
                     <a href="#" class="offer-card__button united__offer"><span
                             class="offer-card__text">Предложения</span></a>
@@ -589,8 +601,9 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card offer-card--small">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card offer-card--small" data-aos="zoom-in-right" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/united-3.png" alt="Image: Offer image" class="offer-card__img">
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <h3 class="offer-card__title offer-card__title--small">Будущее Работы</h3>
@@ -615,8 +628,9 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card offer-card--small">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card offer-card--small" data-aos="zoom-in-right" data-aos-delay="200"
+                    data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/united-4.png" alt="Image: Offer image" class="offer-card__img">
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <h3 class="offer-card__title offer-card__title--small">Будущее Данных</h3>
@@ -641,8 +655,9 @@
                     </div>
                 </div>
                 <!-- /.offer-card -->
-                <div class="offer-card offer-card--small">
-                    <a href="#" class="card-click"></a>
+                <div class="offer-card offer-card--small" data-aos="zoom-in-right" data-aos-delay="300"
+                    data-aos-duration="1000">
+                    <a href="details.html" class="card-click"></a>
                     <img src="img/united-5.png" alt="Image: Offer image" class="offer-card__img">
                     <div class="offer-card__wrapper offer-card__wrapper--small">
                         <h3 class="offer-card__title offer-card__title--small">Будущее Обучения</h3>
@@ -728,19 +743,24 @@
                     </div>
                     <p class="footer__text">Создайте современный и креативный веб-сайт с crealand</p>
                     <div class="footer__socials">
-                        <a href="https://www.google.com/" target="blank" class="footer__socials-link">
+                        <a href="https://www.google.com/" target="_blank" rel="nofollow noopener"
+                            class="footer__socials-link">
                             <img src="img/google.svg" alt="Icon: Google" class="icon footer__socials-icon">
                         </a>
-                        <a href="https://twitter.com/" target="blank" class="footer__socials-link">
+                        <a href="https://twitter.com/" target="_blank" rel="nofollow noopener"
+                            class="footer__socials-link">
                             <img src="img/twitter.svg" alt="Icon: Twitter" class="icon footer__socials-icon">
                         </a>
-                        <a href="https://www.instagram.com/" target="blank" class="footer__socials-link">
+                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener"
+                            class="footer__socials-link">
                             <img src="img/instagram.svg" alt="Icon: Instagram" class="icon footer__socials-icon">
                         </a>
-                        <a href="https://www.linkedin.com/" target="blank" class="footer__socials-link">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="nofollow noopener"
+                            class="footer__socials-link">
                             <img src="img/linkedin.svg" alt="Icon: Linkedin" class="icon footer__socials-icon">
                         </a>
-                        <a href="https://www.youtube.com/" target="blank" class="footer__socials-link">
+                        <a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener"
+                            class="footer__socials-link">
                             <img src="img/youtube.svg" alt="Icon: Youtube" class="icon footer__socials-icon">
                         </a>
                     </div>
@@ -857,22 +877,22 @@
                         </a>
                         <ul class="mobile-menu__submenu-list">
                             <li class="mobile-menu__submenu-item">
-                                <a href="#"
+                                <a href="details.html"
                                     class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №1
                                 </a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#"
+                                <a href="details.html"
                                     class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №2
                                 </a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#"
+                                <a href="details.html"
                                     class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №3
                                 </a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#"
+                                <a href="details.html"
                                     class="mobile-menu__submenu-link mobile-menu__submenu-link--dropdown">Лендинг №4
                                 </a>
                             </li>
@@ -884,16 +904,16 @@
                         </a>
                         <ul class="mobile-menu__submenu-list">
                             <li class="mobile-menu__submenu-item">
-                                <a href="#" class="mobile-menu__submenu-link">Страница №1</a>
+                                <a href="details.html" class="mobile-menu__submenu-link">Страница №1</a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#" class="mobile-menu__submenu-link">Страница №2</a>
+                                <a href="details.html" class="mobile-menu__submenu-link">Страница №2</a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#" class="mobile-menu__submenu-link">Страница №3</a>
+                                <a href="details.html" class="mobile-menu__submenu-link">Страница №3</a>
                             </li>
                             <li class="mobile-menu__submenu-item">
-                                <a href="#" class="mobile-menu__submenu-link">Страница №4</a>
+                                <a href="details.html" class="mobile-menu__submenu-link">Страница №4</a>
                             </li>
                         </ul>
                     </li>
@@ -944,7 +964,9 @@
         <!-- /.sign-up-mpdal__inner -->
     </div>
     <!-- /.modal sign-up-modal -->
-
+    <a href="#" class="to-top">
+        Вверх
+    </a>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

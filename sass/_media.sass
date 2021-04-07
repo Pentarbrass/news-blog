@@ -121,6 +121,9 @@
                 right: 2px
     .footer
         padding: 20px 0 50px
+        &__container
+            &::before
+                display: none
         &-wrapper
         &__info
             margin: 0
@@ -304,6 +307,7 @@
             flex-direction: column-reverse
             align-items: center
             padding: 0 90px 0 0
+            max-width: 460px
         &__info
             margin-right: 15px
             align-items: center
@@ -359,6 +363,7 @@
             flex-wrap: wrap
         &__link
             margin-bottom: 10px
+            margin-right: 14px
     .popular
         &__card
             margin-top: -63px
@@ -489,9 +494,12 @@
             padding-top: 22px
         &__button
             margin-top: 28px
+        &__bottom
+            margin-right: 1px
+            padding: 9px 9px 7px 10px
     .wave
         position: absolute
-        margin-top: -19px
+        margin-top: -22px
         &__img
 
             object-fit: none
@@ -524,6 +532,7 @@
         &__wrapper
             padding: 0 8px 0 7px
             margin-bottom: 70px
+            max-width: 320px
         &__list-title
             font-size: 16px
             line-height: 22px
@@ -552,9 +561,11 @@
             margin-bottom: 24px
     .mobile-menu__inner
         right: 2%
+
     .sign-up-modal
         &__inner
             padding: 10% 0px
+            margin: 0 5px
         &__google-sign-up-btn
             max-width: 290px
             margin: 0 auto 32px

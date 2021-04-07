@@ -16,6 +16,10 @@
 @media (max-width: 1200px)
     .social
         left: 5%
+    .details
+        &-footer
+            &::before
+                display: none
 
 @media (max-width: 992px)
     .mobile-menu
@@ -91,6 +95,8 @@
                 grid-column-end: 3
             &__description
                 margin-top: 5px
+    label.invalid-mess
+        top: -30%
 
 @media (max-width: 768px)
     .details
@@ -137,6 +143,8 @@
         &__title
             font-size: 26px
             line-height: 36px
+    .mobile-menu__inner
+        right: 4%
 
 @media (max-width: 576px)
     .general-section
@@ -144,6 +152,9 @@
     .details
         &-header
             height: 360px
+            background-image: url('../img/details/Image.png')
+            background-size: cover
+            background-position: 37%
         &-logo
             margin-left: 10px
         &-main-title
@@ -160,7 +171,7 @@
             line-height: 14px
         &-wrapper
             margin-top: 32px
-            padding: 0 2px 0 4px
+            padding: 0 2px 0 0px
         &-button
             width: 39px
             height: 40px
@@ -170,7 +181,8 @@
             &--prew
                 left: -5%
             &--next
-                right: -2%
+                right: -3%
+                top: 48.5%
         &-footer
             padding-top: 8px
     .info
@@ -187,6 +199,7 @@
         &-img
             min-width: 272px
             max-height: 200px
+            width: 95.5%
         &-description
             font-size: 12px
             line-height: 16px
@@ -214,7 +227,7 @@
                 &--fixed
                     margin-top: 30px
         &-second
-            padding: 16px 5px 0 9px
+            padding: 14.5px 5px 0 9px
             &__title
                 word-wrap: break-word
                 font-size: 24px
@@ -229,7 +242,8 @@
                 font-size: 20px
                 line-height: 24px
                 letter-spacing: 0.2px
-                margin-top: 35px
+                margin-top: 34.5px
+                margin-bottom: 14.5px
                 &--fixed
                     margin-top: 18px
                     margin-bottom: 14px
@@ -305,8 +319,12 @@
         &__title
             &--fix
                 margin-top: 17px
+    .mobile-menu__inner
+        right: 2%
 
     .hide
         display: none
     .vis-fix
+        display: inline
+    .vis-none
         display: inline

@@ -68,6 +68,7 @@
                     <h2 class="review__title thankyou-title">
                         <?php
                         if ($_GET['type'] == 'message') echo 'Спасибо за подписку!';
+                        else if (($_GET['type'] == 'comment')) echo 'Спасибо за комментарий!'
                         ?>
                     </h2>
                     <a href="index.html" class="button return-button">

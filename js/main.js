@@ -129,7 +129,7 @@ $(document).ready(function () {
         email: "Не верный формат, 'name@domain.com'"
       },
       phone: {
-        required: "Введите ваш номер телефона",
+        required: "Введите Ваш номер телефона",
         minlength: "Не верно указанный номер"
       },
       },
@@ -142,7 +142,20 @@ $('.valid-mail-form').each(function () {
     email: {
         required: "Введите Ваш email",
         email: "Не верный формат, 'name@domain.com'"
-    }
+      },
+      message: {
+        required: "Введите Ваше сообщение!",
+      },
+    },
+    });
+});
+$('.valid-mess-form').each(function () {
+    $(this).validate({
+    errorClass: "invalid-mess",
+    messages: {
+      message: {
+        required: "Введите Ваше сообщение!",
+      },
     },
     });
 });
@@ -157,3 +170,20 @@ $('.valid-mail-form').each(function () {
   }
 });
   lazyframe('.lazyframe');
+
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.to-top').fadeIn();
+} else {
+$('.to-top').fadeOut();
+}
+});
+ 
+$('.to-top').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});

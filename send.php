@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$message = $_POST['message'];
 
 
 // Формирование самого письма
@@ -24,7 +25,12 @@ $bodyMail = "
 <h2>Новый запрос на рассылку!</h2>
 <b>Email:</b> $email<br>
 ";
-
+// Отправка комментария
+$titleComm = "У Вас новый комментарий";
+$bodyComm = "
+<h2>Новый комментарий!</h2>
+<b>Комментарий:</b> $message<br>
+";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -54,6 +60,10 @@ try {
         $mail->Subject = $title;
         $mail->Body = $body;
         $typePhone = 'message';
+    } else if ($message) {
+        $mail->Subject = $titleComm;
+        $mail->Body = $bodyComm;
+        $typePhone = 'comment';
     } else {
         $mail->Subject = $titleMail;
         $mail->Body = $bodyMail;

@@ -36,10 +36,10 @@
     &-wrapper
         position: relative
         margin-top: 102px
-        padding: 0 29px 0 26px
+        padding: 13px 29px 0 26px
     &-button
         position: absolute
-        top: 45%
+        top: 46%
         transform: translateY(-50%)
         z-index: 99
         width: 54px
@@ -54,12 +54,22 @@
             object-fit: cover
         &--next
             right: -1px
-            background-image: url(../img/arrow-next.svg)
+
         &--prew
             left: -1px
-            background-image: url(../img/arrow-prev.svg)
+
     &-footer
         padding: 118px 0 80px 113px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            border: 1px solid $subtitle
+            opacity: 0.1
+            display: inline-block
+            width: 80%
+            margin-top: -48px
+            margin-left: 25px
 
 .info
     &-container
@@ -121,7 +131,7 @@
             color: $subtitle
             margin-top: 0
             &--fixed
-                line-height: 28px
+                line-height: 26px
     &-second
         padding: 6px 29px 0 26px
         &--fixed
@@ -296,6 +306,7 @@
         padding: 0 29px 0 26px
         margin-top: 30px
     &-form
+        position: relative
         display: flex
         align-items: center
         background: $light
@@ -332,3 +343,5 @@
     font-size: 14px
     line-height: 20px
     color: $subtitle
+.vis-none
+    display: none

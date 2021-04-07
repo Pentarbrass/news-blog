@@ -5,7 +5,6 @@ html
     overflow-x: hidden
 body
     font-family: 'Open Sans', sans-serif
-
 ul
     list-style: none
 .container
@@ -41,18 +40,34 @@ a
 .invalid
     margin-top: -10px
     color: $blue
-    border-bottom: 1px solid $blue
     font-size: 14px
     line-height: 15px
 label.invalid-mail
     position: absolute
     color: $blue
-    border-bottom: 1px solid $blue
     font-size: 14px
     line-height: 15px
     top: -9px
+    left: 0
+label.invalid-mess
+    position: absolute
+    color: $blue
+    font-size: 14px
+    line-height: 15px
+    bottom: -25px
     left: 0
 .thankyou-wrapper
     display: flex
     flex-direction: column
     align-items: center
+.to-top
+    position: fixed
+    display: none
+    bottom: 40px
+    right: 40px
+    padding: 9px
+    background-color: $blue
+    color: $light
+    border-radius: 8px
+    text-decoration: none
+    text-align: center
